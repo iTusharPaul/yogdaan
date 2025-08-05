@@ -6,7 +6,7 @@ const passport = require("passport");
 require("dotenv").config();
 
 const app = express();
-require("./passport"); // we'll create this next
+require("./config/passport"); 
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
